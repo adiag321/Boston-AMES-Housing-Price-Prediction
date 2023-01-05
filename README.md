@@ -1,5 +1,3 @@
-# Boston-Housing-Price-Prediction
- 
 # AMES Housing Price Prediction
 
 The Ames Housing dataset was compiled by Dean De Cock for use in data science education. It's an incredible alternative for data scientists looking for a modernized and expanded version of the often cited Boston Housing dataset. 
@@ -57,14 +55,15 @@ We will check the Correlation of Target variable with Prediction variables to ha
 Also, check the skewness for 'GrLivArea' and 'TotalBsmtSF'
 
 ## DATA MODELING
-After proceessing 
-1. Linear Regression<br>
-2. Lasso Regression<br>
-3. Ridge Regression<br>
-4. Random Forest<br>
+After proceessing the data, we have implemented the following `Regression models` -
 
-5. Model Evaluation<br>
-5.1 R-squared (R2)<br>
-5.2 Root Mean Square Error (RMSE)<br>
-5.3 Best Score<br>
-5.4 Cross-Validation Score<br>
+1. Linear Regression
+2. Lasso Regression
+3. Ridge Regression
+4. Random Forest
+
+## Model Evaluation
+1. R-squared (R2)
+2. Root Mean Square Error (RMSE)
+3. Best Score
+3. Cross-Validation Score
