@@ -40,7 +40,7 @@ Before performing Modeling, we will pre-process the dataset by conducting the fo
 
 A.  Correlation matrix between SalePrice with other variables <br>
 
-<img src="images/Heatmap.png">
+![gender](../images/Heatmap.png)
 
 B.  SalePrice correlation matrix <br>
 C.  Scatter plots between 'SalePrice' and correlated variables<br>
