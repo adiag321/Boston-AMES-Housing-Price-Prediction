@@ -39,17 +39,24 @@ Before performing Modeling, we will pre-process the dataset by conducting the fo
 1. Finding Correlation between the `Predictor variables` -
 
 A.  Correlation matrix between SalePrice with other variables <br>
+![Heatmap](https://user-images.githubusercontent.com/39597515/210797898-00e5218e-a623-44e8-b160-c5c091d6c89f.png)
 
 B.  SalePrice correlation matrix <br>
-C.  Scatter plots between 'SalePrice' and correlated variables<br>
+![correlation_with_price](https://user-images.githubusercontent.com/39597515/210798724-f7d32b93-ac17-4b48-bc3f-72d9b8d30872.png)
 
 2. Find Missing Values and impute using `K-Means` if necessary - 
-A.  Computing percent of missing Values<br>
-B. Plotting the Proportion of Missing Values<br>
 
-3. Perform Outlier Detection, to remove values that can decrease the model accuracy and lead to inappropriate predictions -
+A.  Computing percent of missing Values<br>
+<img width="231" alt="Missing_values" src="https://user-images.githubusercontent.com/39597515/210797266-cffa2832-3d35-4fb3-86b2-d365bf5ee308.png">
+
+B. Plotting the Proportion of Missing Values<br>
+![Missing_values_Prop](https://user-images.githubusercontent.com/39597515/210797497-ee540036-3a08-49a7-9d40-9eea1ec5ba40.png)
+
+3. Perform Outlier Detection, to remove values that can decrease the model accuracy and lead to inappropriate predictions - <br>
 A. Univariate Analysis<br>
+
 B. Bivariate Analysis<br>
+![Bivariate_analysis](https://user-images.githubusercontent.com/39597515/210798510-36bdfc3c-ac1f-4064-aca0-e72c3f988849.png)
 
 4. Analysing the target variable `SalePrice` - 
 We will check the Correlation of Target variable with Prediction variables to handle `Multi-Collinearity`. 
@@ -58,13 +65,30 @@ Also, check the skewness for 'GrLivArea' and 'TotalBsmtSF'
 ## DATA MODELING
 After proceessing the data, we have implemented the following `Regression models` -
 
-1. Linear Regression
+1. `Linear Regression`
+<img width="586" alt="Linear_regression" src="https://user-images.githubusercontent.com/39597515/210801180-1a4dab02-b195-47ef-b6bf-f92b1794f0ce.png">
 2. Lasso Regression
+<img width="470" alt="Lasso_regression" src="https://user-images.githubusercontent.com/39597515/210801266-ab88c903-83e2-4804-b84f-af6355f2205d.png">
 3. Ridge Regression
-4. Random Forest
+<img width="622" alt="Ridge_regression" src="https://user-images.githubusercontent.com/39597515/210801310-389f6a73-c32f-41d6-ab95-d5e81ddd6b85.png">
+4. Random Forest Regressor
+<img width="914" alt="Random_Forest_Regressor" src="https://user-images.githubusercontent.com/39597515/210801054-74f1e7e7-8fb8-4125-ba98-dcc0f6b2a24a.png">
 
-## Model Evaluation
+`Random Forest Regressor With different Depth Level` - 
+![random_forest_diff_max_depth](https://user-images.githubusercontent.com/39597515/210801624-c22e80d8-44c9-45af-9b29-777d6d9ac469.png)
+
+`Decision Tree Regressor` - 
+![random_decision_tree_regressor](https://user-images.githubusercontent.com/39597515/210799985-366e9761-9828-4474-8339-9f483c9f9015.png)
+
+## MODEL EVALUATION
 1. R-squared (R2)
 2. Root Mean Square Error (RMSE)
 3. Best Score
-3. Cross-Validation Score
+4. Cross-Validation Score
+
+## CONCLUSION
+On the basis of our evaluation parameters calculated for each model below are the observations:
+1. R-squared is a statistical measure of how close the data are to the fitted regression line. The higher the R-squared, the better the model fits the data --> `Ridge regression` (0.9285)
+2. Root Mean Square Error (RMSE) is the standard deviation of the residuals (prediction errors). Lower the RMSE, the better the model fits the data --> `Ridge regression` (0.1021)
+3. Higher the Best score the better the model fits the data --> `Ridge regression` (0.8857)
+4. Higher Cross validation score means model performing well on the validation set, indicating that it may perform well on the unseen data(test set) --> `Ridge regression` (0.8927)
