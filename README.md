@@ -39,6 +39,9 @@ Before performing Modeling, we will pre-process the dataset by conducting the fo
 1. Finding Correlation between the `Predictor variables` -
 
 A.  Correlation matrix between SalePrice with other variables <br>
+
+![gender]("Images/Heatmap.png")
+
 B.  SalePrice correlation matrix <br>
 C.  Scatter plots between 'SalePrice' and correlated variables<br>
 
